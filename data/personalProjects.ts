@@ -1,0 +1,6 @@
+export const personalProjects=[
+ {slug:"litlens-ai",name:"LitLens AI",subtitle:"LLM Research Paper Intelligence Assistant",status:"Active",description:"An LLM-powered research intelligence platform that extracts structured evidence from research papers and uses retrieval-augmented generation with page-level citations for cross-paper Q&A, comparison, and research-gap analysis.",technology:["Python","FastAPI","OpenAI","RAG","BM25","Next.js","React","TypeScript","Pydantic","PyMuPDF","SQLite"],githubUrl:"",demoUrl:"",image:""},
+ {slug:"trainiq",name:"TrainIQ",subtitle:"Workout Analytics & Progress Tracker",status:"Completed / Iterating",description:"A cross-platform workout tracking application designed to combine fitness data, exercise history, progression tracking, and downloadable workout reporting.",technology:["React","TypeScript","Python","Apple HealthKit","Garmin FIT SDK","Capacitor"],githubUrl:"",demoUrl:"",image:""},
+ // TODO: Add SipSync technology stack, detailed functionality, links, and imagery when supplied by the owner.
+ {slug:"sipsync",name:"SipSync",subtitle:"Hydration Tracking & Progress Experience",status:"Project",description:"Project details forthcoming.",technology:[] as string[],githubUrl:"",demoUrl:"",image:""},
+];

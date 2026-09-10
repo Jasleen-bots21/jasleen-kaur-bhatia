@@ -1,0 +1,10 @@
+import { professionalProjects } from "@/data/professionalProjects";
+
+export function generateStaticParams(){return professionalProjects.map(({slug})=>({slug}))}
+
+export default async function WorkPage({params}:{params:Promise<{slug:string}>}){
+ const {slug}=await params; const project=professionalProjects.find(item=>item.slug===slug);
+ if(!project)return <main className="case-page"><p>Case study not found.</p><a href="/">Return home</a></main>;
+ const sections=[["Context",project.context],["Problem",project.problem],["My Role",project.role],["Approach",project.approach],["Evaluation",project.evaluation],["Impact",project.impact],["Key Takeaways",project.takeaways]].filter(([,copy])=>copy);
+ return <main className="case-detail"><header><a href="/">JKB<span>·</span></a><a href="/#work">← Selected work</a></header><section className="case-hero"><p className="section-index">CASE STUDY / {project.category}</p><h1>{project.title}</h1><div><p>{project.summary}</p><dl><div><dt>Organization</dt><dd>{project.organization}</dd></div>{project.client&&<div><dt>Client</dt><dd>{project.client}</dd></div>}</dl></div></section><section className="case-metrics">{project.metrics.map(m=><div key={m.label}><strong>{m.value}</strong><span>{m.label}</span></div>)}</section><section className="case-body"><aside><span className="section-index">Technologies & Methods</span><div className="tag-list">{project.techniques.map(t=><span key={t}>{t}</span>)}</div></aside><div>{sections.map(([title,copy])=><article key={title}><span className="section-index">{title}</span><p>{copy}</p></article>)}{project.slug==="nlp-resume-intelligence"&&<article><span className="section-index">System / Workflow</span><div className="detail-flow">{["Candidate Documents","Document Processing","NLP / Predictive Scoring","Candidate Intelligence","Analytics"].map((s,i)=><div key={s}><span>{String(i+1).padStart(2,"0")}</span><strong>{s}</strong>{i<4&&<b>↓</b>}</div>)}</div></article>}</div></section><footer><a href="/#work">← All selected work</a><span>JASLEEN KAUR BHATIA</span></footer></main>
+}
