@@ -1,7 +1,7 @@
 export const profile = {
   name: "Jasleen Kaur Bhatia",
   shortName: "JKB",
-  headline: "Data Scientist | Applied ML Engineer",
+  headline: "Data Scientist | Machine Learning & Generative AI",
   positioning: "Building Machine Learning and Generative AI systems from experimentation and evaluation through scalable, production-ready solutions.",
   supporting: "Nearly a decade of experience working with data across analytics, machine learning, NLP, predictive modeling, and enterprise Generative AI.",
   about: [
