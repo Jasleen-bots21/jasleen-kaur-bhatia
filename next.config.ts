@@ -7,7 +7,7 @@ const basePath = isProjectPages ? `/${repository}` : '';
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: false,
-  basePath,
+  basePath: '',
   assetPrefix: basePath,
   images: { unoptimized: true },
 };
