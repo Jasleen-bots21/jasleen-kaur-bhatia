@@ -32,6 +32,7 @@ jobs:
       - name: Prepare clean GitHub Pages routes
         run: |
           touch dist/client/.nojekyll
+          cp -R "dist/client/${{ github.event.repository.name }}/_next" dist/client/_next
           for page in dist/client/work/*.html; do
             slug="${page%.html}"
             mkdir -p "$slug"
