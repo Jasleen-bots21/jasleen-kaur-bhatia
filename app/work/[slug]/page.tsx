@@ -1,6 +1,7 @@
 import { professionalProjects } from "@/data/professionalProjects";
 
 export function generateStaticParams(){return professionalProjects.map(({slug})=>({slug}))}
+export const dynamicParams=false;
 
 export default async function WorkPage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params; const project=professionalProjects.find(item=>item.slug===slug);

@@ -40,9 +40,9 @@ To add a headshot, save an optimized image in `public/images/`, then set `image`
 
 Add final URLs in `data/social.ts` and mirror the profile email in `data/profile.ts`. Set `NEXT_PUBLIC_SITE_URL` to the production origin so canonical and social metadata resolve to the final domain.
 
-## Deploy to Vercel
+## Deploy to GitHub Pages (free)
 
-Import the repository into Vercel, use the default build command (`npm run build`), and add `NEXT_PUBLIC_SITE_URL` as the final production URL. The project is also configured for OpenAI Sites through `.openai/hosting.json`.
+Push the repository to GitHub using the `main` branch. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**. The included workflow builds and publishes the static site automatically after every push. The free address is `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
 
 ## Publication checklist
 
