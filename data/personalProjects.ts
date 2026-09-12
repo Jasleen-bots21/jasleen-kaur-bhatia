@@ -14,7 +14,16 @@ export const personalProjects = [
   {
     slug: "trainiq", name: "TrainIQ", subtitle: "Workout Analytics & Progress Tracker", status: "Completed / Iterating",
     description: "A cross-platform workout tracking application designed to combine fitness data, exercise history, progression tracking, and downloadable workout reporting.",
-    technology: ["React", "TypeScript", "Python", "Apple HealthKit", "Garmin FIT SDK", "Capacitor"], githubUrl: "", demoUrl: "", screenshots: [] as { src: string; alt: string }[],
+    technology: ["React", "TypeScript", "Python", "Apple HealthKit", "Garmin FIT SDK", "Capacitor"], githubUrl: "", demoUrl: "",
+    screenshots: [
+      { src: "/projects/trainiq/01-home-mobile.jpg", alt: "TrainIQ mobile workout dashboard" },
+      { src: "/projects/trainiq/02-quick-entry.jpg", alt: "TrainIQ natural-language quick workout entry" },
+      { src: "/projects/trainiq/03-parsed-workout.jpg", alt: "TrainIQ interpreted workout review" },
+      { src: "/projects/trainiq/04-active-workout.jpg", alt: "TrainIQ active strength workout logging" },
+      { src: "/projects/trainiq/05-home-desktop.jpg", alt: "TrainIQ desktop workout dashboard" },
+      { src: "/projects/trainiq/06-history-desktop.jpg", alt: "TrainIQ workout history" },
+      { src: "/projects/trainiq/07-report-desktop.jpg", alt: "TrainIQ Apple Health and Garmin workout report" },
+    ],
   },
   {
     slug: "sipsync", name: "SipSync", subtitle: "Social Hydration Tracking & Progress Experience", status: "Built / Iterating",
