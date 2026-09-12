@@ -9,7 +9,9 @@ export const profile = {
     "I enjoy problems where the solution is not obvious at the beginning: defining the problem, experimenting with different approaches, building rigorous evaluation frameworks, and turning successful prototypes into systems that people can actually use.",
     "Today, much of my work sits at the intersection of machine learning, LLMs, evaluation, and enterprise AI.",
   ],
-  image: null as string | null,
-  email: "",
+  image: "/profile/jasleen-kaur-bhatia.png",
+  email: "kaur.jasleenbhatia@gmail.com",
+  linkedinUrl: "https://www.linkedin.com/in/jasleenkaurbhatia/",
+  githubUrl: "https://github.com/Jasleen-bots21",
   resumeUrl: "/resume/Jasleen-Kaur-Bhatia-Resume.pdf",
 };
